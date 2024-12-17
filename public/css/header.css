@@ -1,0 +1,108 @@
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #6D5BFF;
+    color: white;
+    width: 100%;
+}
+
+.header img {
+    height: 100px;
+    object-fit: contain;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right span {
+    margin-left: 10px;
+}
+
+/* Estilo do botão Home */
+.home-button {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto */
+    padding: 9px 12px; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para mãozinha */
+    display: flex; /* Flex para alinhar ícone e texto */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 8px; /* Espaçamento entre o ícone e o texto */
+    transition: 400ms; /* Suaviza as animações */
+    margin-left: 20px; /* Espaço entre o logo e o botão */
+    text-decoration: none;
+}
+
+/* Efeito de hover no botão Home */
+.home-button:hover {
+    background-color: #3d8b3f; /* Cor de fundo mais escura no hover */
+    transition: 400ms;
+}
+
+/* Estilo do ícone dentro do botão Home */
+.home-button i {
+    font-size: 18px; /* Tamanho do ícone */
+}
+
+
+/* Estilos gerais do botão Sair */
+.logout-button {
+    background-color: #FF4D4D !important; /* Cor de fundo vermelha padrão */
+    color: white; /* Cor do texto */
+    padding: 8px 12px; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para mãozinha */
+    display: flex;
+    align-items: center; /* Centraliza o ícone verticalmente */
+    gap: 8px; /* Espaçamento entre o ícone e o texto */
+    transition: 400ms;
+    margin-left: 0.5rem;
+}
+
+/* Efeito de hover no botão */
+.logout-button:hover {
+    background-color: #8b2828 !important; /* Cor de fundo mais escura no hover */
+    transition: 400ms;
+}
+
+/* Estilos do ícone dentro do botão */
+.logout-button i {
+    font-size: 18px; /* Tamanho do ícone */
+}
+
+/* Container para a imagem de perfil */
+.profile-container {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Deixa o container redondo */
+    background: linear-gradient(135deg, #FF4D4D, #FF2A2A); /* Gradiente circular */
+    padding: 4px; /* Espaço entre a imagem e a borda */
+    overflow: hidden; /* Garante que a imagem não saia da borda redonda */
+}
+
+/* Estilos da imagem de perfil */
+img.profile-picture {
+    width: 100%; /* A imagem vai preencher o contêiner */
+    height: 100%; /* A imagem vai preencher o contêiner */
+    object-fit: cover; /* Preenche o espaço de forma proporcional sem distorcer */
+    border-radius:50%; /* Garante que a imagem em si também fique redonda */
+}

@@ -1,0 +1,292 @@
+/* Responsável pelo contêiner */
+.responsavel-container {
+    max-width: 1600px; /* Limita a largura do contêiner */
+    width: 95%; /* Faz o contêiner acompanhar a largura da tabela */
+    margin: 25px auto 10px; /* Centraliza o contêiner */
+    padding: 20px; /* Adiciona espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destaque */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #f9f9f9; /* Cor de fundo suave */
+}
+
+/* Estilo para ícones dentro da tabela */
+.responsavel-table td .icon_user {
+    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+    color: var(--primary-color); /* Cor do ícone (azul padrão para combinar com o header) */
+    font-size: 1rem; /* Tamanho do ícone */
+}
+
+/* Botões e barra de busca */
+.search-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px 0; /* Espaçamento no topo e na parte inferior */
+}
+
+
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.search-bar {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.add-button i {
+    font-size: 1.2rem;
+}
+
+.add-button:hover {
+    background-color: var(--secondary-color);
+    transition: background-color 0.3s ease;
+}
+
+/* Tabela */
+.table-section {
+    overflow-x: auto;
+}
+
+.responsavel-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.responsavel-table th, .responsavel-table td {
+    text-align: left;
+    padding: 12px 20px;
+}
+
+.responsavel-table th {
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+}
+
+.responsavel-table tr {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.2s ease;
+}
+
+.responsavel-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.responsavel-table td:last-child {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.edit-button, .delete-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.edit-button {
+    background-color: #17a2b8;
+}
+
+.edit-button:hover {
+    background-color: #138496;
+}
+
+.delete-button {
+    background-color: #dc3545;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+/* Responsável Formulario */
+.responsavel-form-container {
+    width: 90%; /* A largura maior do formulário */
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-description {
+    font-size: 1rem;
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* Estilos de Fieldset */
+.form-group {
+    margin-bottom: 30px;
+    border: none;
+}
+
+legend {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Estilos de inputs */
+.input-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.input-item {
+    width: 48%; /* Deixa os inputs do lado um do outro */
+}
+
+.input-item label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+    margin-top: 12px;
+}
+
+.input-item input,
+.input-item select,
+.input-item textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.input-item textarea{
+    resize: none;
+}
+
+.input-item input:focus,
+.input-item select:focus,
+.input-item textarea:focus {
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.2);
+    outline: none;
+}
+
+/* Estilos dos Botões */
+.form-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.submit-button {
+    background-color: #6D5BFF;
+    color: white;
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #5c4cd6;
+}
+
+.cancel-button {
+    font-size: 1.1rem;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s;
+}
+
+.cancel-button:hover {
+    color: #6D5BFF;
+}
+
+.materia_ajuste{
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-group label {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+}
+
+.checkbox-group input:checked + label {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+.checkbox-group input {
+    display: none; /* Oculta o checkbox */
+}
+
+/* Ajustes de Responsividade */
+@media (max-width: 768px) {
+    .input-item {
+        width: 100%;
+    }
+    .input-group {
+        gap: 15px;
+    }
+    .form-actions {
+        display: block;
+        text-align: center;
+    }
+}
