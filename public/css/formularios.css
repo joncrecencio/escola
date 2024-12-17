@@ -221,7 +221,7 @@ legend {
     align-items: center;
 }
 .submit-button {
-    background-color: #6D5BFF;
+    background-color: var(--primary-color);
     color: white;
     padding: 14px 30px;
     font-size: 1.1rem;
@@ -249,7 +249,7 @@ legend {
 }
 
 .cancel-button:hover {
-    color: #6D5BFF;
+    color: var(--primary-color);
 }
 
 .materia_ajuste{
