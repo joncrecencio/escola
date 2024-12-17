@@ -22,7 +22,8 @@
             </div><!--input-block-->
 
             <div class="input-block">
-                <button type="submit">Entrar</button>
+                <!-- <button type="submit">Entrar</button> remover o comentário no momento da lógica -->
+                <a href="public/dashboard.php" type="submit">Entrar</a>
             </div><!--input-block-->
             <a href="">Esqueci minha senha</a>
         </form>

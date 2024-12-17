@@ -71,7 +71,8 @@ body {
     color: #ccc;
 }
 
-.input-block button {
+.input-block button,
+.input-block a {
     width: 100%;
     padding: 0.75rem;
     border: none;
@@ -82,10 +83,13 @@ body {
     font-weight: 500;
     cursor: pointer;
     transition: background 0.3s;
+    text-decoration: none;
+    text-align: center;
 }
 
-.input-block button:hover {
+.input-block button:hover, .input-block a:hover {
     background: #00D2FF;
+    text-decoration: none;
 }
 
 a {
