@@ -60,7 +60,7 @@
             <span>Professores</span>
         </a>
 
-        <a href="" class="card">
+        <a href="chamada.php" class="card">
             <i class="fas fa-clipboard-list"></i>
             <span>Chamada</span>
         </a>
