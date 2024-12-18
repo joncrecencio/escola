@@ -126,12 +126,19 @@
                                 <td><input type="radio" name="aluno_1" value="presenca"></td>
                                 <td><input type="radio" name="aluno_1" value="falta"></td>
                                 <td><input type="radio" name="aluno_1" value="atestado"></td>
+                                <td>
+                                    <textarea class="justificativa" name="justificativa_1" placeholder="Informe a justificativa" style="display: none;"></textarea>
+                                </td>
                             </tr>
+
                             <tr>
                                 <td>Maria Souza</td>
                                 <td><input type="radio" name="aluno_2" value="presenca"></td>
                                 <td><input type="radio" name="aluno_2" value="falta"></td>
                                 <td><input type="radio" name="aluno_2" value="atestado"></td>
+                                <td>
+                                    <textarea class="justificativa" name="justificativa_1" placeholder="Informe a justificativa" style="display: none;"></textarea>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -143,5 +150,25 @@
         </section>
     </main>
 </body>
+
+<script>
+    document.querySelectorAll('input[type=radio]').forEach(radio => {
+        radio.addEventListener('change', function () {
+            const row = this.closest('tr'); // Encontra a linha da tabela correspondente
+            const justificativa = row.querySelector('.justificativa'); // Encontra o campo de justificativa
+
+            if (this.value === 'falta' || this.value === 'atestado') {
+                justificativa.style.display = 'block'; // Exibe o campo de justificativa
+                justificativa.required = true; // Torna o campo obrigatório
+            } else {
+                justificativa.style.display = 'none'; // Oculta o campo de justificativa
+                justificativa.required = false; // Remove a obrigatoriedade
+                justificativa.value = ''; // Limpa o campo
+            }
+        });
+    });
+
+
+</script>
 
 </html>

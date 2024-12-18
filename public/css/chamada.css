@@ -92,3 +92,13 @@
     background-color: var(--secondary-color);
     transition: 0.3s;
 }
+
+.justificativa {
+    width: 100%;
+    min-height: 50px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    resize: none;
+}
