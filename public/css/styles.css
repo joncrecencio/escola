@@ -1,6 +1,7 @@
 :root {
     /* --primary-color: #00380a; */
-    --primary-color: #6D5BFF;
+    --primary-color: #4233b6;
+    /* --primary-color: #6D5BFF; */
     --secondary-color: #00D2FF;
     --background-gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     --button-hover-color: var(--secondary-color);
